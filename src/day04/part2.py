@@ -70,6 +70,5 @@ if __name__ == "__main__":
         # and increment those copies based on the number of copies our current card has
         for next_index_match in card.get_next_indices():
             for copy in range(card.get_copies()):
-                # check if next_index_match is within our list
                 pile[next_index_match].increment_copies()
     print(total_copies)
